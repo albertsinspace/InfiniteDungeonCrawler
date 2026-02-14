@@ -31,7 +31,7 @@ while (isMainGameLoopActive)
     {
         Console.Clear();
         Console.WriteLine("Goodbye");
-        break;
+        isMainGameLoopActive = false;
     }
 
     else
