@@ -1,4 +1,5 @@
 ﻿bool isMainGameLoopActive = true;
+bool isGameLoopActive = true;
 
 while (isMainGameLoopActive)
 {
@@ -9,9 +10,9 @@ while (isMainGameLoopActive)
     Console.WriteLine("2. How to play");
     Console.WriteLine("3. Quit");
     Console.WriteLine();
-    Console.WriteLine("Enter your choice: ");
+    Console.WriteLine("Enter your choice... ");
 
-    string userMenuChoice = Console.ReadLine();
+    var userMenuChoice = Console.ReadLine();
 
     if (userMenuChoice == "1")
     {
@@ -23,7 +24,9 @@ while (isMainGameLoopActive)
     else if (userMenuChoice == "2")
     {
         Console.Clear();
-        Console.WriteLine("How to play");
+        Console.WriteLine("You start with nothing and as you progress through the dungeon levels you will collect loot which you can choose to keep or sell to the shopkeeper.\nYou can choose to just keep the loot as well if you'd like and simply continue on until you want to sell to the shopkeeper, all of it will stay in your inventory.");
+        Console.WriteLine();
+        Console.Write("Press any key to go back...");
         Console.ReadLine();
     }
 
